@@ -59,7 +59,7 @@ let str1 = "hello"
 let str2 = "mayank"
 
 let str3 = str1 + str2
-console.log(str3);
+// console.log(str3);
 
 // console.log("1" + 2); // 12
 // console.log(1 + "2") // 12
@@ -68,5 +68,21 @@ console.log(str3);
 // console.log(1+2+ "2") //32
 
 // console.log( 3 + 4 * 5 % 3 ); // don't write this type 
+// console.log(true); // true 
+// console.log(+true); // 1 
 
-console.log(+true);
+// console.log(true+); // not possible
+console.log(+""); //0
+
+let num1, num2, num3
+
+// num1 = num2 = num3 = 2 + 2 // don't type this type of code 
+
+let gameCounter = 100 
+gameCounter++; //postfix operator 
+++gameCounter; //prefix operaotr
+// https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values
+console.log(gameCounter);
+
+
+
