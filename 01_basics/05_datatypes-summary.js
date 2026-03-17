@@ -37,3 +37,12 @@ const myfunction = function (){
 
 // console.log(typeof bigNumber);
 console.log(typeof myfunction);
+
+
+
+
+// +++++++++++++++++++++++++++++++++
+
+// Stack (Primitve), Heap (Non-primitve)
+
+let myYoutubename = " mayankyoutube.com"
