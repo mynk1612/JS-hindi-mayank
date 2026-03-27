@@ -6,7 +6,7 @@ function sayMyName(){
         // console.log("N");
         // console.log("K");
 }
-// sayMyName()  // reference
+// sayMyName()  // reference for execution 
 
 /*
 Parameter and argument
@@ -21,7 +21,7 @@ console.log(number1 + number2);
 }
 
 
-addTwoNumber() //NaN
+addTwoNumber() //NaN == not a number
 addTwoNumber(4, 5) // 9
 addTwoNumber(4, "6") // string 46
 addTwoNumber(4, "a") // 4a
@@ -51,7 +51,7 @@ console.log(loginUserMessage()) //undefined just logged in
 
 /*
 function loginUserMessage(username){
-    if (username === undefined ) {
+    if (username === undefined ) {  // it run when the value is true
         console.log("Please enter a username");  //Please enter a username undefined just logged in
         return //undefined
     }
