@@ -45,7 +45,7 @@ function loginUserMessage(username){
 }
 // console.log(loginUserMessage("mayank")) // mayank just logged in
 // console.log(loginUserMessage("")) //  just logged in
-console.log(loginUserMessage()) //undefined just logged in 
+// console.log(loginUserMessage()) //undefined just logged in 
 
 //+++++++ this time for if else statement+++++
 
@@ -63,21 +63,58 @@ console.log(loginUserMessage())
 function loginUserMessage(username){
     // if ("") { // empty string "" false value
         if (!undefined) {  // undefined 
-        console.log("Please enter a username"); 
+        // console.log("Please enter a username"); 
         return   
     }
     return `${username} just logged in`
 }
-console.log(loginUserMessage())
+// console.log(loginUserMessage())
 
 // default value 
 
 function loginUserMessage(username = "mak"){
     if (!username) {
-        console.log("Please enter a username");  
+        // console.log("Please enter a username");  
         return 
     }
     return `${username} just logged in`
 }
-console.log(loginUserMessage()) // mak just logged in
-console.log(loginUserMessage("kandpal"))  //kandpal just logged in  (overwrite)
+// console.log(loginUserMessage()) // mak just logged in
+// console.log(loginUserMessage("kandpal"))  //kandpal just logged in  (overwrite)
+
+
+/* +++++++  -------  SHOPPING CARDS -----++++++++++ */
+
+// function calculateCartPrice(...num1){  // three dot called as rest operator or spread depend on use case  
+function calculateCartPrice(val1, val2, ...num1){    
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500, 2000))
+
+const user = {
+    username: "mayank",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+// handleObject(user) //Username is mak and price is 399
+handleObject({
+    username: "mak",
+    price: 399
+}) //Username is mak and price is 399
+
+
+// +++++++---  ARRAYS inside ---++++++++++
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArray));  // 400
+console.log(returnSecondValue([200, 400, 100, 600])); //400
+
