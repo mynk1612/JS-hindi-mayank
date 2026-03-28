@@ -3,7 +3,7 @@ const user = {
     price: 888,
 
     WelcomeMessage: function() {
-        console.log(`${this.username}, welcome to wesite`); // this refer to current contest 
+        // console.log(`${this.username}, welcome to wesite`); // this refer to current contest 
         // console.log(this);  // WelcomeMessage: [Function: WelcomeMessage]
     }
 
@@ -14,4 +14,30 @@ const user = {
 // user.username = "mak"
 // user.WelcomeMessage() // mak, welcome to wesite
 
-console.log(this);  // empty {}
+// console.log(this);  // empty {}
+
+/*
+function coffee(){
+    let username = "mayank"  
+    console.log(this);
+    // console.log(this.username); // undefined 
+}
+coffee()
+*/
+
+/*
+const chai = function (){
+    let username = "mayank"
+    console.log(this.username);  //undefined
+}
+chai()      */
+ 
+
+// +++++++++++ ARROW FUNCTION +++++++++++
+
+const chai = () => {
+    let username = "mayank"
+    // console.log(this.username);  //undefined
+    console.log(this);  // {} o/p empty paranthesis
+}
+chai()
