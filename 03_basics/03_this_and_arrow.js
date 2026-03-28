@@ -34,10 +34,30 @@ chai()      */
  
 
 // +++++++++++ ARROW FUNCTION +++++++++++
-
+/*
 const chai = () => {
     let username = "mayank"
     // console.log(this.username);  //undefined
     console.log(this);  // {} o/p empty paranthesis
 }
 chai()
+
+// PURE ARROW FUNCTION 
+// Basic arrow function (EXPLICIT) 
+
+// const addTwo = (num1, num2) => {
+//     return num1 + num2
+// }
+// console.log(addTwo(3, 4)) // 7
+*/
+// IMPLICIT RETURN ARROW FUNCTION  == doesn't write return 
+
+// const addTwo = (num1, num2) => (num1 + num2)
+// console.log(addTwo(3, 4)) // 7
+
+// const addTwo = (num1, num2) => {username: "mayank"}  // object return 
+// console.log(addTwo(3, 4)) // undefined
+
+const addTwo = (num1, num2) => ({username: "mayank"})
+console.log(addTwo(3, 4)) // { username: 'mayank' }
+
