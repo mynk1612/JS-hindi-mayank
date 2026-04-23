@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <h1>Mayanjavascript</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const sayDate = function(str){
+        console.log(str, Date.now());
+        // console.log("Mayank", Date.now());
+   }
+    // const intervalId = setInterval(sayDate, 1000, "hlo")
+
+//    clearInterval(intervalId)
+
+  let intervalId;
+   // Start button
+        document.getElementById("start").addEventListener("click", function () {
+            // Prevent multiple intervals
+            if (!intervalId) {
+                intervalId = setInterval(sayDate, 1000, "Hello");
+            }
+        });
+
+        // Stop button
+        document.getElementById("stop").addEventListener("click", function () {
+            clearInterval(intervalId);
+            intervalId = null; // reset variable
+        });
+</script>
+</html>
